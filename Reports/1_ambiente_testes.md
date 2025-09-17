@@ -7,3 +7,17 @@ O ambiente é composto por máquinas virtuais com **Kali Linux** (máquina ataca
 
 ---
 
+
+## 🔽 Download das Ferramentas
+
+### 1. VirtualBox
+O **VirtualBox** é uma ferramenta de virtualização de sistemas operacionais.  
+Com ele é possível rodar o **Kali Linux** em um computador com Windows, sem comprometer o sistema principal.  
+Isso garante segurança, já que qualquer teste será feito dentro de um ambiente isolado.  
+
+🔗 [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+---
+
+
+
