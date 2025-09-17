@@ -19,5 +19,47 @@ Isso garante segurança, já que qualquer teste será feito dentro de um ambient
 
 ---
 
+### 2. OWASP Broken Web Apps
+O **OWASP** (*Open Web Application Security Project*) é uma comunidade que fornece materiais e ferramentas sobre segurança de aplicações.  
+Neste caso, utilizaremos a **OWASP Broken Web Apps**, uma máquina virtual com diversas aplicações vulneráveis para prática.  
 
+🔗 [Download OWASP BWA](https://sourceforge.net/projects/owaspbwa/files/1.2/OWASP_Broken_Web_Apps_VM_1.2.ova/download)
+
+➡️ Após o download, abra o VirtualBox e utilize a opção **IMPORT** para carregar o arquivo `.ova`.
+
+---
+
+### 3. Kali Linux
+O **Kali Linux** é uma distribuição baseada no Debian voltada para **auditoria e testes de segurança**.  
+Utilizaremos a versão em **máquina virtual pré-configurada para o VirtualBox**, evitando a instalação manual.  
+
+🔗 [Download VM Kali Linux](https://www.kali.org/get-kali/#kali-virtual-machines)
+
+➡️ Após o download, abra o VirtualBox e utilize o botão **+ (Add)** para adicionar o arquivo `.vbox`.
+
+---
+
+## ⚙️ Configuração do Ambiente Virtual
+
+No VirtualBox:  
+1. Clique em **Tools** → aba **Nat Networks**.  
+2. Se não houver nenhuma rede NAT criada, clique em **Create** para gerar uma.  
+
+### 🔌 Tipos de Rede no VirtualBox
+- **NAT:** VM recebe IP virtual e acessa a internet via host.  
+- **NAT Network:** cria rede virtual compartilhada entre várias VMs.  
+- **Host Network:** VM se comunica diretamente com o host e rede externa.  
+- **Bridge Network:** VM atua como dispositivo independente na rede, com IP próprio.  
+
+---
+
+## 🌐 Testando a Conexão entre as VMs
+
+1. Ligue as duas VMs (Kali e OWASP).  
+2. Acesse a VM **Kali Linux (Hacker)**:  
+   - **Login:** `kali`  
+   - **Senha:** `kali`  
+3. No terminal, execute:  
+   ```bash
+   ip a
 
