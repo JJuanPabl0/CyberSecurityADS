@@ -62,4 +62,18 @@ No VirtualBox:
 3. No terminal, execute:  
    ```bash
    ip a
+   ```
+    Verifique se a VM recebeu um endereço IP.
 
+4. Na VM OWASP (Web Server), ao iniciar será exibido um IP. Anote-o.
+5. De volta ao Kali Linux, abra o navegador Firefox e acesse o IP da VM OWASP.
+✅ Se a página de boas-vindas aparecer, significa que o ambiente está configurado corretamente.
+
+
+![Tela de configuração da rede NAT](imagens/rede-nat.png)
+![Página inicial OWASP no navegador Kali](imagens/owasp-pagina.png)
+
+
+## 📝 Conclusão
+
+Com esse ambiente configurado, temos a base necessária para realizar os próximos testes de segurança, incluindo SQL Injection, XSS, DoS, entre outros ataques, de forma segura e isolada.
